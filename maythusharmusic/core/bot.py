@@ -5,6 +5,18 @@ import config
 
 from ..logging import LOGGER
 
+# Flask app initialize
+app = Flask(__name__)
+
+
+@app.route("/")
+def home():
+    return "Bot is running"
+
+
+def run():
+    app.run(host="0.0.0.0", port=8000, debug=False)
+
 
 class Hotty(Client):
     def __init__(self):

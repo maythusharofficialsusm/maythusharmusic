@@ -5,3 +5,8 @@ services:
     plan: pro
     buildCommand: pip3 install --no-cache-dir --upgrade --requirement requirements.txt
     startCommand: bash start
+    envVars:
+      - key: API_ID
+        value: "20078321"
+      - key: API_HASH
+        value: "c8ed904e4aac83cea1f27b73984debad"

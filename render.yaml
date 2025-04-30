@@ -1,5 +1,5 @@
 services:
-  - type: worker
+  - type: web
     name: maythusharmusicvv1
     env: python
     plan: pro

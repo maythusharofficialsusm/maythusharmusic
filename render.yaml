@@ -1,7 +1,7 @@
 services:
-  - type: web
+  - type: worker
     name: maythusharmusicvv1
-    env: python
+    env: python3
     plan: pro
     buildCommand: pip3 install --no-cache-dir --upgrade --requirement requirements.txt
     startCommand: bash start
